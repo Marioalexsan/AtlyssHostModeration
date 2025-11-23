@@ -154,6 +154,6 @@ This is a fully server-side mod that is also compatible with vanilla clients. Yo
 
 HostModeration targets the following game versions and mods:
 
-- ATLYSS 82025.a2
+- ATLYSS 112025.a1
 
 Compatibility with other game versions and mods is not guaranteed, especially for updates with major changes.

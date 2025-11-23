@@ -156,7 +156,7 @@ public class HostModeration : BaseUnityPlugin
             targetName = Texts.ClientDetails(targetPeer);
             characterNickname = targetPeer._peerPlayer._nickname;
 
-            HostConsole._current._cmdManager.Init_KickClient(HostConsole._current._peerListEntries.IndexOf(targetPeer), targetPeer._dataID);
+            HostConsole._current._cmdManager.Init_KickClient(targetPeer, targetPeer._dataID);
         }
 
 
@@ -297,7 +297,7 @@ public class HostModeration : BaseUnityPlugin
         var callerName = ConnUtils.ConnectionIdToName(callerConnectionId);
         var targetName = ConnUtils.SteamIdToName(steamId);
 
-        HostConsole._current._cmdManager.Init_KickClient(HostConsole._current._peerListEntries.IndexOf(peer), peer._dataID);
+        HostConsole._current._cmdManager.Init_KickClient(peer, peer._dataID);
 
         NotifyOperators(Texts.KickedUser(callerName, targetName));
 
